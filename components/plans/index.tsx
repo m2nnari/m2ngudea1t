@@ -10,10 +10,11 @@ export const Plans = () => {
       <Flex
         id="pricing"
         css={{
-          paddingY: "$20", // Use 'paddingY' instead of 'py'
-          gap: "1rem",
-          paddingX: "$6", // Use 'paddingX' instead of 'px'
-          scrollMarginTop: "80px",
+          paddingY: "$20",
+          gap: "2rem",
+          paddingX: "$6",
+          scrollMarginTop: "20px",
+          pt: "$16",
         }}
         justify="center"
         wrap="wrap"
@@ -24,68 +25,66 @@ export const Plans = () => {
           <Text h2>Hinnakiri</Text>
         </Flex>
 
-        <Flex css={{ gap: "1rem", width: "100%" }} wrap="wrap" justify="center">
+        <Flex css={{ gap: "2rem", width: "100%" }} wrap="wrap" justify="center">
           {/* Esmaspäev - Neljapäev */}
-          <Card css={{ padding: "$6", maxWidth: "400px", minHeight: "350px" }}>
+          <Card css={{ padding: "$8", maxWidth: "360px", borderRadius: "$lg", boxShadow: "$md" }}>
             <Card.Header>
               <Grid.Container css={{ paddingLeft: "$6" }}>
                 <Grid xs={12}>
-                  <Text h4 css={{ lineHeight: "$xs" }}>
+                  <Text h4 css={{ textAlign: "center", width: "100%" }}>
                     Esmaspäev - Neljapäev
                   </Text>
                 </Grid>
                 <Grid xs={12}>
-                  <Text css={{ color: "$accents8" }}>
+                  <Text css={{ color: "$accents8", textAlign: "center", width: "100%" }}>
                     Rendihind tööpäevadel – ideaalne väiksemate sündmuste jaoks.
                   </Text>
                 </Grid>
               </Grid.Container>
             </Card.Header>
 
-            <Card.Body css={{ paddingY: "$7", paddingX: "$10" }}>
-              <Flex css={{ alignItems: "center", gap: "0.5rem" }}>
+            <Card.Body css={{ textAlign: "center" }}>
+              <Flex css={{ alignItems: "center", gap: "0.5rem", justifyContent: "center" }}>
                 <Text h2>125 €</Text>
                 <Text css={{ color: "$accents8", fontSize: "$lg" }}>/ 3 h</Text>
               </Flex>
+              <Button css={{ marginTop: "$4", width: "100%" }} onClick={() => setModalOpen(true)}>Broneeri</Button>
             </Card.Body>
-            <Button css={{ marginBottom: "$5" }} onClick={() => setModalOpen(true)}>Broneeri</Button>
           </Card>
 
           {/* Reede - Pühapäev */}
-          <Card css={{ padding: "$6", maxWidth: "400px", minHeight: "350px" }}>
+          <Card css={{ padding: "$8", maxWidth: "360px", borderRadius: "$lg", boxShadow: "$md" }}>
             <Card.Header>
               <Grid.Container css={{ paddingLeft: "$6" }}>
                 <Grid xs={12}>
-                  <Text h4 css={{ lineHeight: "$xs" }}>
+                  <Text h4 css={{ textAlign: "center", width: "100%" }}>
                     Reede - Pühapäev
                   </Text>
                 </Grid>
                 <Grid xs={12}>
-                  <Text css={{ color: "$accents8" }}>
+                  <Text css={{ color: "$accents8", textAlign: "center", width: "100%" }}>
                     Nädalavahetuse hinnakiri – ideaalne suuremate koosviibimiste ja pidude jaoks.
                   </Text>
                 </Grid>
               </Grid.Container>
             </Card.Header>
 
-            <Card.Body css={{ paddingY: "$7", paddingX: "$10" }}>
-              <Flex css={{ alignItems: "center", gap: "0.5rem" }}>
+            <Card.Body css={{ textAlign: "center" }}>
+              <Flex css={{ alignItems: "center", gap: "0.5rem", justifyContent: "center" }}>
                 <Text h2>165 €</Text>
                 <Text css={{ color: "$accents8", fontSize: "$lg" }}>/ 3 h</Text>
               </Flex>
+              <Button css={{ marginTop: "$4", width: "100%" }} onClick={() => setModalOpen(true)}>Broneeri</Button>
             </Card.Body>
-            <Button css={{ marginBottom: "$5" }} onClick={() => setModalOpen(true)}>Broneeri</Button>
           </Card>
         </Flex>
 
-        <Flex css={{ marginTop: "$8" }} justify="center">
+        <Flex css={{ marginTop: "$6" }} justify="center">
           <Text css={{ color: "$accents8" }}>
             NB! Riigipühadel kehtib nädalavahetuse hind.
           </Text>
         </Flex>
       </Flex>
-
-      <Divider css={{ position: "absolute", left: "0", marginTop: "$5", opacity: "0.3" }} />
 
       <Modal
         closeButton
@@ -107,9 +106,13 @@ export const Plans = () => {
           />
         </Modal.Body>
       </Modal>
+
+      <Divider css={{ position: "absolute", left: "0", marginTop: "$15", opacity: "0.3" }} />
     </>
   );
 };
+
+
 
 
 

@@ -64,7 +64,7 @@ export const Faq = () => {
                      }} 
                   >
                      <Text 
-                        h3
+                        h4
                         css={{
                            textAlign: 'center', 
                            width: '100%' 
@@ -101,7 +101,7 @@ export const Faq = () => {
          </Flex>
 
          <Divider
-            css={{ position: 'absolute', inset: '0p', left: '0', mt: '$5' }}
+            css={{ position: 'absolute', inset: '0p', left: '0', mt: '$5', opacity: "0.3" }}
          />
       </>
    );

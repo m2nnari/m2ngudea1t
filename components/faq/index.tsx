@@ -3,6 +3,55 @@ import React from 'react';
 import { Flex } from '../styles/flex';
 
 export const Faq = () => {
+
+   const faqs = [
+      {
+         question: 'Kui palju mahub peoruumi inimesi?',
+         answer: [
+            'Peoruum mahutab lahedalt kuni 30 inimest.'
+         ]
+      },
+      {
+         question: 'Kas olemas on vajalikud sööginõud?',
+         answer: [
+            'Jah, olemas on serveerimiseks ning ka söömiseks vajalikudnõud ja söögiriistad.'
+         ]
+      },
+      {
+         question: 'Kas on olemas ka kohvimasin? Kas pean kaasa võtma oma kohvi?',
+         answer: [
+            'Teil on võimalus kasutada kogu ürituse vältel kohvimasinat, mis valmistab värsketest kohviubadest erinevaid kohvisid ja kohvijooke kõigest ühe nupuvajutusega -',
+            'latte, cappuccino, piimakohv, must kohv, espresso. Kaasa palun võtta endale meelepärane piim (piimajook).'
+         ]
+      },
+      {
+         question: 'Kas pean ise koristama või saan selle teenusena juurde osta?',
+         answer: [
+            'Lisatasu (20 €) eest on võimalik tellida koristusteenus mängutoa poolt.'
+         ]
+      },
+      {
+         question: 'Milliseid lisateenuseid veel pakute?',
+         answer: [
+            'Võimalik on rentida pallipalee enda isiklikule üritusele või lisavõimalusena M.AIT peoruumi. Rent isiklikule üritusele 24h- 100€, üritusele 50€ (lisaks juurde võimalik soetada õhupalle).',
+            'Täidetud snäkisein peole - 50€ (popkorn, krõpsud, küpsised, kastmed, erinevad kommid).'
+         ]
+      },
+      {
+         question: 'Kus on võimalik leida lisainfot M.AIT peoruumi kohta?',
+         answer: [
+            'Lisainfot meie peoruumi kohta leiab Facebookist M.AIT ning Instagramist @mangudeait.',
+            'Täidetud snäkisein peole - 50€ (popkorn, krõpsud, küpsised, kastmed, erinevad kommid).'
+         ]
+      },
+      {
+         question: 'Kas pakute ka toitlustust?',
+         answer: [
+            'Meie toitlustust ei paku, kuid teeme koostööd Käsu Hans restoga, mis aitab katta teie peolaua vastavalt teie soovidele.'
+         ]
+      }
+   ];
+
    return (
       <>
          <Flex
@@ -31,17 +80,6 @@ export const Faq = () => {
                >
                   Korduma kippuvad küsimused
                </Text>
-               <Text
-                  span
-                  css={{
-                     maxWidth: '700px',
-                     color: '$accents8',
-                     textAlign: 'center',
-                     width: '100%',
-                     display: 'block' 
-                  }}
-               >
-               </Text>
             </Flex>
 
             {/* FAQ Items */}
@@ -52,7 +90,7 @@ export const Faq = () => {
                }}
                direction={'column'}
             >
-               {[...Array(4)].map((_, index) => (
+               {faqs.map((faq, index) => (
                   <Flex 
                      key={index}
                      direction="column"
@@ -70,31 +108,22 @@ export const Faq = () => {
                            width: '100%' 
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                        {faq.question}
                      </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                           textAlign: 'center',
-                           width: '100%',
-                           display: 'block'
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl aliquet aliquet.
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                           textAlign: 'center',
-                           width: '100%',
-                           display: 'block'
-                        }}
-                     >
-                        Elit. Sed condimentum, nisl ut aliquam lacinia, nisl nisl aliquet aliquet.
-                     </Text>
+                     {faq.answer.map((line, i) => (
+                        <Text
+                           key={i}
+                           span
+                           css={{
+                              color: '$accents8',
+                              textAlign: 'center',
+                              width: '100%',
+                              display: 'block'
+                           }}
+                        >
+                           {line}
+                        </Text>
+                     ))}
                   </Flex>
                ))}
             </Flex>
@@ -106,6 +135,8 @@ export const Faq = () => {
       </>
    );
 };
+
+
 
 
 

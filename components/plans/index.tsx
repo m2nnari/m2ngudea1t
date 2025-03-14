@@ -37,7 +37,7 @@ export const Plans = () => {
                 </Grid>
                 <Grid xs={12}>
                   <Text css={{ color: "$accents8", textAlign: "center", width: "100%" }}>
-                    Rendihind tööpäevadel – ideaalne väiksemate sündmuste jaoks.
+                    Rendihind tööpäevadel – <br />ideaalne väiksemate sündmuste jaoks.
                   </Text>
                 </Grid>
               </Grid.Container>
@@ -63,7 +63,7 @@ export const Plans = () => {
                 </Grid>
                 <Grid xs={12}>
                   <Text css={{ color: "$accents8", textAlign: "center", width: "100%" }}>
-                    Nädalavahetuse hinnakiri – ideaalne suuremate koosviibimiste ja pidude jaoks.
+                    Nädalavahetuse hinnakiri – <br />ideaalne suuremate koosviibimiste ja pidude jaoks.
                   </Text>
                 </Grid>
               </Grid.Container>

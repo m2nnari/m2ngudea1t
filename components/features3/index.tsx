@@ -26,8 +26,8 @@ export const Features3 = () => {
             }}
           >
             Ülevaade esmaolulistest heakorra punktidest meie ruumis, mida palume sündmuse korraldamisel
-            järgida ning kindlasti tutvustada ka enda külalistele! Heakorra reeglite põhimõte on, et oleks
-            tore endal ja jätkuks rõõmu ka teistele.
+            järgida ning kindlasti tutvustada ka enda külalistele! <br />
+            Heakorra reeglite põhimõte on, et oleks tore endal ja jätkuks rõõmu ka teistele.
           </Text>
         </Flex>
 
@@ -47,9 +47,8 @@ export const Features3 = () => {
                 <Flex direction="column">
                   <Text h4>Lubatud on</Text>
                   <Text span>
-                    ruumi rentida kokkulepitud sündmuseks ning ruumi inventari ja sisustust kasutada
-                    heaperemehelikult. Kohapeale võite korraldada just endale meelepärase meelelahutuse ja
-                    söögid-joogid.
+                  ruumi rentida kokkulepitud sündmuseks ning kasutada inventaari ja sisustust heaperemehelikult.
+                  Kohapeal saate korraldada just endale sobiva meelelahutuse ning tuua kaasa soovitud söögid ja joogid.
                   </Text>
                 </Flex>
               </Flex>
@@ -63,9 +62,8 @@ export const Features3 = () => {
                 <Flex direction="column">
                   <Text h4>Suhtume hästi, kui</Text>
                   <Text span>
-                    jälgid kella ja peo lõpus enda järel koristad nii, et ruum on kasutusvalmis ka järgmistele
-                    külalistele, st: paned kasutatud nõud masinasse, pesed vaagnad ja muud kasutatud
-                    serveerimisalused.
+                  kui jälgid kella ja peo lõpus on ruum samas konditsioonis või paremas kui enne. <br />
+                  Oleme viisakad inimesed ning järgime heaperemehelikkuse põhimõtteid.
                   </Text>
                 </Flex>
               </Flex>
@@ -89,8 +87,8 @@ export const Features3 = () => {
                 <Flex direction="column">
                   <Text h4>Keelatud on</Text>
                   <Text span>
-                    ruumi vara lõhkuda või endaga kaasa võtta. Väldime ohtlike olukordi - turnimine, ronimine,
-                    hüppamine on lubatud ainult selleks ettenähtud atraktsioonidel.
+                    ruumi vara lõhkuda või kaasa võtta, suitsetamine (k.a e-sigaret), narkootiliste ainete tarbimine. <br />
+                    Ohtlike olukordade vältimiseks on turnimine, ronimine ja hüppamine lubatud vaid nendeks ettenähtud atraktsioonidel.
                   </Text>
                 </Flex>
               </Flex>
@@ -104,8 +102,8 @@ export const Features3 = () => {
                 <Flex direction="column">
                   <Text h4>Vastutus</Text>
                   <Text span>
-                    Lapsed ja alaealised viibivad ruumis täiskasvanud ürituse korraldaja järelvalvel. Ühise
-                    heaolu nimel võib ruumis viibida vaid sokkides või sussides.
+                  Ürituse korraldaja vastutab laste ja alaealiste järelvalve eest kogu ruumi kasutamise aja jooksul. <br />
+                  Kõigi heaolu ja puhtuse tagamiseks palume ruumis viibida vaid sokkides või sussides.
                   </Text>
                 </Flex>
               </Flex>

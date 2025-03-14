@@ -65,9 +65,9 @@ export const Hero = () => {
                      delaySpeed={1500}
                   />
                </Text>
-               <Text css={{ color: '$accents8', maxWidth: '380px', mt: '-$2' }} size={'$md'} span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare metus ac eros scelerisque rhoncus.
-               </Text>
+               {/* <Text css={{ color: '$accents8', maxWidth: '380px', mt: '-$2' }} size={'$md'} span>
+                  M.AIT mänguruum ootab teid korraldama meeldejääv üritus.
+               </Text> */}
             </Box>
 
             {/* Image Section with Fading Effect */}

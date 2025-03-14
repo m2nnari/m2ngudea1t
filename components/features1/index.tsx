@@ -13,7 +13,7 @@ export const Features1 = () => {
     { name: "Playstation 5", icon: <ConsoleIcon /> },
     { name: "Virtuaalreaalsus", icon: <VRIcon /> },
     { name: "RC autorada", icon: <CarTrackIcon /> },
-    { name: "Pallimeri", icon: <BallPitIcon /> },
+    { name: "Pallipalee", icon: <BallPitIcon /> },
     { name: "Fotonurk", icon: <PhotoIcon /> },
     { name: "Interaktiivsed mängud", icon: <InteractiveGamesIcon /> },
   ];

@@ -9,6 +9,9 @@ const images = [
   "/image4.jpg",
   "/image5.jpg",
   "/image6.jpg",
+  "/image7.jpg",
+  "/image8.jpg",
+  "/image9.jpg",
 ];
 
 export const Gallery = () => {
@@ -20,7 +23,7 @@ export const Gallery = () => {
           py: "$20",
           gap: "1rem",
           px: "$6",
-          scrollMarginTop: "80px", // Prevents being hidden under a navbar
+          scrollMarginTop: "80px",
         }}
         justify="center"
         direction="column"
@@ -32,18 +35,18 @@ export const Gallery = () => {
         <Flex
           css={{
             display: "grid",
-            gridTemplateColumns: "1fr", // Default: 1 column (mobile)
+            gridTemplateColumns: "1fr", 
             gap: "1rem",
             maxWidth: "1000px",
             width: "100%",
             "@sm": {
-              gridTemplateColumns: "repeat(2, 1fr)", // 2 columns on small screens
+              gridTemplateColumns: "repeat(2, 1fr)", 
             },
             "@md": {
-              gridTemplateColumns: "repeat(3, 1fr)", // 3 columns on medium screens
+              gridTemplateColumns: "repeat(3, 1fr)", 
             },
             "@lg": {
-              gridTemplateColumns: "repeat(3, 1fr)", // Keeps 3 columns on larger screens
+              gridTemplateColumns: "repeat(3, 1fr)", 
             },
           }}
         >
@@ -58,7 +61,7 @@ export const Gallery = () => {
                 overflow: "hidden",
                 borderRadius: "$lg",
                 transition: "transform 0.3s ease",
-                "&:hover": { transform: "scale(1.05)" }, // Subtle zoom effect
+                "&:hover": { transform: "scale(1.05)" }, 
               }}
             >
               <Card.Body

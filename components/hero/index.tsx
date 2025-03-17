@@ -4,7 +4,7 @@ import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
 import { Typewriter } from 'react-simple-typewriter';
 
-const images = ['image1.jpg', 'image2.jpg'];
+const images = ['image1.jpg', 'image2.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg', 'image9.jpg'];
 
 export const Hero = () => {
    const [currentImage, setCurrentImage] = useState(0);
@@ -65,12 +65,9 @@ export const Hero = () => {
                      delaySpeed={1500}
                   />
                </Text>
-               {/* <Text css={{ color: '$accents8', maxWidth: '380px', mt: '-$2' }} size={'$md'} span>
-                  M.AIT mänguruum ootab teid korraldama meeldejääv üritus.
-               </Text> */}
+
             </Box>
 
-            {/* Image Section with Fading Effect */}
             <Box
                css={{
                   position: 'relative',

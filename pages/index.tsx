@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Head from 'next/head'; // Import the Head component
+import Head from 'next/head'; 
 import { Nav } from '../components/navbar/navbar';
 import { Layout } from '../components/navbar/layout';
 import { Hero } from '../components/hero';
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
    return (
       <Layout>
          <Head>
-            <title>M.AIT - Mängude Ait</title> {/* Set the page title here */}
+            <title>M.AIT - Mängude Ait</title> 
          </Head>
          <Nav />
          <Box as="main">

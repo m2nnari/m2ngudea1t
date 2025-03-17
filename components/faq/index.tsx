@@ -11,13 +11,16 @@ export const Faq = () => {
       },
       {
          question: 'Kas olemas on vajalikud sööginõud?',
-         answer: ['Jah, olemas on serveerimiseks ning ka söömiseks vajalikud nõud ja söögiriistad.']
+         answer: [
+            'Jah, olemas on serveerimiseks ning ka söömiseks vajalikud korduvkasutatavad nõud ja söögiriistad.',
+            'Peoruumi rentimise ajal on võimalik kasutada kööki ning selle inventari (nõudepesumasin, mikrolaineahi, pliit).'
+         ]
       },
       {
          question: 'Kas on olemas ka kohvimasin? Kas pean kaasa võtma oma kohvi?',
          answer: [
-            'Teil on võimalus kasutada kogu ürituse vältel kohvimasinat, mis valmistab värsketest kohviubadest erinevaid kohvisid ja kohvijooke kõigest ühe nupuvajutusega -',
-            'latte, cappuccino, piimakohv, must kohv, espresso. Kaasa palun võtta endale meelepärane piim (piimajook).'
+            'Teil on võimalus kasutada kogu ürituse vältel kohvimasinat, mis valmistab värsketest kohviubadest erinevaid kohvijooke',
+            'kõigest ühe nupuvajutusega - latte, cappuccino, piimakohv, must kohv, espresso. Kaasa palun võtta endale meelepärane piim (piimajook).'
          ]
       },
       {
@@ -27,7 +30,8 @@ export const Faq = () => {
       {
          question: 'Milliseid lisateenuseid veel pakute?',
          answer: [
-            'Võimalik on rentida pallipalee enda isiklikule üritusele või lisavõimalusena M.AIT peoruumi. Rent isiklikule üritusele 24h- 100€, üritusele 50€ (lisaks juurde võimalik soetada õhupalle).',
+            'Võimalik on rentida pallipalee enda isiklikule üritusele või lisavõimalusena M.AIT peoruumi. ',
+            'Rent isiklikule üritusele 24h- 100€, peoruumi üritusele 50€ (lisaks juurde võimalik soetada õhupalle).',
             'Täidetud snäkisein peole - 50€ (popkorn, krõpsud, küpsised, kastmed, erinevad kommid).'
          ]
       },

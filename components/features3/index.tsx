@@ -12,7 +12,7 @@ export const Features3 = () => {
         css={{
           px: "$6",
           pb: "$14",
-          scrollMarginTop: "80px", // Prevent hiding under navbar
+          scrollMarginTop: "80px", 
         }}
       >
         <Flex direction="column" justify="center" align="center" css={{ pt: "$20" }}>
@@ -25,8 +25,8 @@ export const Features3 = () => {
               textAlign: "center",
             }}
           >
-            Ülevaade esmaolulistest heakorra punktidest meie ruumis, mida palume sündmuse korraldamisel
-            järgida ning kindlasti tutvustada ka enda külalistele! <br />
+            Ülevaade esmaolulistest heakorra punktidest meie ruumis, mida palume sündmuse
+            korraldamisel järgida ning kindlasti tutvustada ka enda külalistele! <br />
             Heakorra reeglite põhimõte on, et oleks tore endal ja jätkuks rõõmu ka teistele.
           </Text>
         </Flex>
@@ -47,23 +47,25 @@ export const Features3 = () => {
                 <Flex direction="column">
                   <Text h4>Lubatud on</Text>
                   <Text span>
-                  ruumi rentida kokkulepitud sündmuseks ning kasutada inventaari ja sisustust heaperemehelikult.
-                  Kohapeal saate korraldada just endale sobiva meelelahutuse ning tuua kaasa soovitud söögid ja joogid.
+                  ruumi rentida kokkulepitud sündmuseks ning kasutada<br /> <b>inventari ja sisustust </b>
+                  heaperemehelikult. <br />Kohapeal saate korraldada just endale sobiva meelelahutuse ning
+                  tuua kaasa soovitud söögid ja joogid.
                   </Text>
                 </Flex>
               </Flex>
             </Card.Body>
           </Card>
 
-          <Card css={{ mw: "500px" }}>
+          <Card css={{ mw: "560px" }}>
             <Card.Body>
               <Flex css={{ gap: "0.5rem" }}>
                 <CheckIcon />
                 <Flex direction="column">
                   <Text h4>Suhtume hästi, kui</Text>
                   <Text span>
-                  kui jälgid kella ja peo lõpus on ruum samas konditsioonis või paremas kui enne. <br />
-                  Oleme viisakad inimesed ning järgime heaperemehelikkuse põhimõtteid.
+                  jälgid kella ja peo lõpus on ruum <b>elementaarses korras</b>, st. mustad nõud on pandud
+                  kööki, toolid, mängud jms. asetatud oma kohale <br />ning suurem praht põrandalt ja muudelt
+                  pindadelt ära korjatud. <br /> Kui kasutate nõudepesumasinat, palume nõud eelnevalt üle loputada.
                   </Text>
                 </Flex>
               </Flex>
@@ -80,15 +82,20 @@ export const Features3 = () => {
             pt: "$8",
           }}
         >
-          <Card css={{ mw: "500px" }}>
+          <Card css={{ mw: "600px" }}>
             <Card.Body>
               <Flex css={{ gap: "0.5rem" }}>
                 <CheckIcon />
                 <Flex direction="column">
                   <Text h4>Keelatud on</Text>
                   <Text span>
-                    ruumi vara lõhkuda või kaasa võtta, suitsetamine (k.a e-sigaret), narkootiliste ainete tarbimine. <br />
-                    Ohtlike olukordade vältimiseks on turnimine, ronimine ja hüppamine lubatud vaid nendeks ettenähtud atraktsioonidel.
+                  ruumi vara lõhkuda või kaasa võtta, suitsetamine (k.a e-sigaret), <br />narkootiliste ainete
+                  tarbimine.
+                  Ohtlike olukordade vältimiseks on turnimine, ronimine ja hüppamine lubatud vaid
+                  nendeks ettenähtud atraktsioonidel. <br /> <b>Vara kahjustamisel, hävitamisel või kaotamisel
+                  on peoruumil õigus nõuda kahju hüvitamist. 
+                  Küünalde, vulkaanküünalde, säraküünalde jms põletamine ning elava tule
+                  kasutamine mistahes vormis tuleb eelnevalt kokku leppida.</b>
                   </Text>
                 </Flex>
               </Flex>
@@ -103,7 +110,8 @@ export const Features3 = () => {
                   <Text h4>Vastutus</Text>
                   <Text span>
                   Ürituse korraldaja vastutab laste ja alaealiste järelvalve eest kogu ruumi kasutamise aja jooksul. <br />
-                  Kõigi heaolu ja puhtuse tagamiseks palume ruumis viibida vaid sokkides või sussides.
+                  Kõigi heaolu ja puhtuse tagamiseks palume ruumis viibida vaid sokkides või sussides. <br />
+                  <b>M.AIT ei vastuta</b> külastaja isiklike asjade (kott, mobiiltelefon, võtmed vms.) eest.
                   </Text>
                 </Flex>
               </Flex>

@@ -48,7 +48,7 @@ export const Plans = () => {
                 <Text h2>125 €</Text>
                 <Text css={{ color: "$accents8", fontSize: "$lg" }}>/ 3 h</Text>
               </Flex>
-              <Button css={{ marginTop: "$4", width: "100%" }} onClick={() => setModalOpen(true)}>Broneeri</Button>
+              <Button css={{ marginTop: "$4", width: "100%", backgroundColor: "#003049" }} onClick={() => setModalOpen(true)}>Broneeri</Button>
             </Card.Body>
           </Card>
 
@@ -74,7 +74,7 @@ export const Plans = () => {
                 <Text h2>165 €</Text>
                 <Text css={{ color: "$accents8", fontSize: "$lg" }}>/ 3 h</Text>
               </Flex>
-              <Button css={{ marginTop: "$4", width: "100%" }} onClick={() => setModalOpen(true)}>Broneeri</Button>
+              <Button css={{ marginTop: "$4", width: "100%", backgroundColor: "#003049" }} onClick={() => setModalOpen(true)}>Broneeri</Button>
             </Card.Body>
           </Card>
         </Flex>

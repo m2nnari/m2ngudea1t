@@ -76,7 +76,7 @@ export const Nav = () => {
 
         <Navbar.Content>
           <Navbar.Item>
-            <Button auto flat onClick={() => setModalOpen(true)}>
+            <Button auto flat css={{backgroundColor: "#003049", color: "white",}} onClick={() => setModalOpen(true)}>
               Broneeri aeg
             </Button>
           </Navbar.Item>

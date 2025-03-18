@@ -54,7 +54,7 @@ export const Hero = () => {
                <Text h1 css={{ display: 'inline', mt: '-$1' }}>
                   Korralda meeldejääv
                </Text>
-               <Text h1 css={{ display: 'inline', mt: '-$3' }} color="primary">
+               <Text h1 css={{ display: 'inline', mt: '-$3' }} color="#003049">
                   <Typewriter
                      words={['Sünnipäev', 'Klassiõhtu', 'Koosviibimine']}
                      loop={0}

@@ -15,7 +15,7 @@ export const Features3 = () => {
           scrollMarginTop: "80px", 
         }}
       >
-        <Flex direction="column" justify="center" align="center" css={{ pt: "$20" }}>
+        <Flex direction="column" justify="center" align="center" css={{ pt: "$15" }}>
           <Text h2>Kodukord</Text>
           <Text
             span

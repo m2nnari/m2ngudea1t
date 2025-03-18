@@ -71,7 +71,7 @@ export const Faq = () => {
                </a>
             </Flex>
          </Flex>
-         <Divider css={{ position: 'absolute', inset: '0p', left: '0', mt: '$5', opacity: "0.3" }} />
+         <Divider css={{ position: 'absolute', inset: '0p', left: '0', mt: '$ 0', opacity: "0.3" }} />
       </>
    );
 };

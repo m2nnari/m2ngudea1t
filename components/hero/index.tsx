@@ -12,7 +12,7 @@ export const Hero = () => {
    useEffect(() => {
       const interval = setInterval(() => {
          setCurrentImage((prev) => (prev + 1) % images.length);
-      }, 4000); // Change image every 4 seconds
+      }, 4000); 
       return () => clearInterval(interval);
    }, []);
 

@@ -16,16 +16,16 @@ export const Nav = () => {
       setTimeout(() => {
         window.scrollTo({ top: elementPosition - offset, behavior: "smooth" });
 
-        // Ensure body scrolling is enabled after clicking
+        
         document.body.style.overflow = "auto";
         document.documentElement.style.overflow = "auto";
 
-        // Close the mobile navbar if it's open
+        
         const navbarToggle = document.querySelector(".nextui-navbar-toggle");
         if (navbarToggle) {
           (navbarToggle as HTMLElement).click();
         }
-      }, 100); // Small delay to ensure smooth transition
+      }, 100); 
     }
   };
 
@@ -35,6 +35,7 @@ export const Nav = () => {
     { label: "Hinnakiri", id: "pricing" },
     { label: "Galerii", id: "gallery" },
     { label: "KKK", id: "faq" },
+    { label: "Asukoht", id: "location" },
   ];
 
   return (

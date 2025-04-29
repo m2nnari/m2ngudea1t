@@ -13,7 +13,6 @@ export const Features1 = () => {
     { name: "Playstation 5", icon: <ConsoleIcon /> },
     { name: "Virtuaalreaalsus", icon: <VRIcon /> },
     { name: "RC autorada", icon: <CarTrackIcon /> },
-    { name: "Pallipalee", icon: <BallPitIcon /> },
     { name: "Fotonurk", icon: <PhotoIcon /> },
     { name: "Interaktiivsed mängud", icon: <InteractiveGamesIcon /> },
   ];
@@ -46,7 +45,7 @@ export const Features1 = () => {
             maxWidth: "1000px",
             textAlign: "center",
             justifyContent: "center",
-            "@md": { gridTemplateColumns: "repeat(3, 1fr)" }, // Desktop: 3x2
+            "@md": { gridTemplateColumns: "repeat(5, 1fr)" }, // Desktop: 3x2
           }}
         >
           {features.map((feature, index) => (

@@ -30,8 +30,6 @@ export const Faq = () => {
       {
          question: 'Milliseid lisateenuseid veel pakute?',
          answer: [
-            'Võimalik on rentida pallipalee enda isiklikule üritusele või lisavõimalusena M.AIT peoruumi. ',
-            'Rent isiklikule üritusele 24h- 100€, peoruumi üritusele 50€ (lisaks juurde võimalik soetada õhupalle).',
             'Täidetud snäkisein peole - 50€ (popkorn, krõpsud, küpsised, kastmed, erinevad kommid).'
          ]
       },

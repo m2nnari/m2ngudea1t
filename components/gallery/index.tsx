@@ -20,7 +20,7 @@ type GalleryImage = {
 // ✅ Airtable API details — REPLACE THESE
 const API_KEY = "patutj6VQfMuRg8Uj.c0def7d549b93f20a3c88e6b104f067b1cd0746b565426188b0cc31927720a6a";
 const BASE_ID = "app3qQknKyZgvuNRR";
-const TABLE_NAME = "Gallery";
+const TABLE_NAME = "Table%201";
 
 export const Gallery = () => {
   const [images, setImages] = useState<GalleryImage[]>([]);

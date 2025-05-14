@@ -1,20 +1,62 @@
 import { Card, Divider, Text } from "@nextui-org/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Flex } from "../styles/flex";
 
-const images = [
-  "/image1.jpg",
-  "/image2.jpg",
-  "/image3333.jpg",
-  "/image4.jpg",
-  "/image5.jpg",
-  "/image6.jpg",
-  "/image777.jpg",
-  "/image888.jpg",
-  "/image9.jpg",
-];
+// ✅ Type definitions
+type AirtableRecord = {
+  id: string;
+  fields: {
+    Image?: { url: string }[];
+    Order?: number;
+  };
+};
+
+type GalleryImage = {
+  id: string;
+  url: string;
+  order: number;
+};
+
+// ✅ Airtable API details — REPLACE THESE
+const API_KEY = "patutj6VQfMuRg8Uj.c0def7d549b93f20a3c88e6b104f067b1cd0746b565426188b0cc31927720a6a";
+const BASE_ID = "app3qQknKyZgvuNRR";
+const TABLE_NAME = "Gallery";
 
 export const Gallery = () => {
+  const [images, setImages] = useState<GalleryImage[]>([]);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const res = await fetch(
+          `https://api.airtable.com/v0/${BASE_ID}/${TABLE_NAME}`,
+          {
+            headers: {
+              Authorization: `Bearer ${API_KEY}`,
+            },
+          }
+        );
+
+        const data = await res.json();
+
+        const sortedImages: GalleryImage[] = (data.records as AirtableRecord[])
+          .map((record) => ({
+            id: record.id,
+            url: record.fields.Image?.[0]?.url ?? "",
+            order: record.fields.Order ?? 999,
+          }))
+          .filter((img) => img.url)
+          .sort((a, b) => a.order - b.order);
+
+        setImages(sortedImages);
+      } catch (error) {
+        console.error("Failed to load images from Airtable", error);
+      }
+    };
+
+    fetchImages();
+  }, []);
+
   return (
     <>
       <Flex
@@ -31,28 +73,24 @@ export const Gallery = () => {
       >
         <Text h2>Galerii</Text>
 
-        {/* Responsive Grid */}
         <Flex
           css={{
             display: "grid",
-            gridTemplateColumns: "1fr", 
+            gridTemplateColumns: "1fr",
             gap: "1rem",
             maxWidth: "1000px",
             width: "100%",
             "@sm": {
-              gridTemplateColumns: "repeat(2, 1fr)", 
+              gridTemplateColumns: "repeat(2, 1fr)",
             },
             "@md": {
-              gridTemplateColumns: "repeat(3, 1fr)", 
-            },
-            "@lg": {
-              gridTemplateColumns: "repeat(3, 1fr)", 
+              gridTemplateColumns: "repeat(3, 1fr)",
             },
           }}
         >
-          {images.map((src, index) => (
+          {images.map(({ id, url }) => (
             <Card
-              key={index}
+              key={id}
               isPressable
               isHoverable
               css={{
@@ -61,12 +99,12 @@ export const Gallery = () => {
                 overflow: "hidden",
                 borderRadius: "$lg",
                 transition: "transform 0.3s ease",
-                "&:hover": { transform: "scale(1.05)" }, 
+                "&:hover": { transform: "scale(1.05)" },
               }}
             >
               <Card.Body
                 css={{
-                  backgroundImage: `url(${src})`,
+                  backgroundImage: `url(${url})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   width: "100%",
@@ -90,7 +128,4 @@ export const Gallery = () => {
     </>
   );
 };
-
-
-
 

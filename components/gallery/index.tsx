@@ -18,9 +18,10 @@ type GalleryImage = {
 };
 
 // ✅ Airtable API details — REPLACE THESE
-const API_KEY = "patutj6VQfMuRg8Uj.c0def7d549b93f20a3c88e6b104f067b1cd0746b565426188b0cc31927720a6a";
-const BASE_ID = "app3qQknKyZgvuNRR";
-const TABLE_NAME = "Table%201";
+const API_KEY = process.env.NEXT_PUBLIC_AIRTABLE_TOKEN!;
+const BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID!;
+const TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME!;
+
 
 export const Gallery = () => {
   const [images, setImages] = useState<GalleryImage[]>([]);

@@ -2,7 +2,9 @@ import { Card, Divider, Text } from "@nextui-org/react";
 import React, { useEffect, useState } from "react";
 import { Flex } from "../styles/flex";
 
-// ✅ Type definitions
+/* =====================
+   Types
+===================== */
 type AirtableRecord = {
   id: string;
   fields: {
@@ -17,12 +19,16 @@ type GalleryImage = {
   order: number;
 };
 
-// ✅ Airtable API details — REPLACE THESE
+/* =====================
+   Airtable config
+===================== */
 const API_KEY = process.env.NEXT_PUBLIC_AIRTABLE_TOKEN!;
 const BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID!;
-const TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_TABLE_NAME!;
+const TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_GALLERY_TABLE!;
 
-
+/* =====================
+   Component
+===================== */
 export const Gallery = () => {
   const [images, setImages] = useState<GalleryImage[]>([]);
 
@@ -30,7 +36,9 @@ export const Gallery = () => {
     const fetchImages = async () => {
       try {
         const res = await fetch(
-          `https://api.airtable.com/v0/${BASE_ID}/${TABLE_NAME}`,
+          `https://api.airtable.com/v0/${BASE_ID}/${encodeURIComponent(
+            TABLE_NAME
+          )}`,
           {
             headers: {
               Authorization: `Bearer ${API_KEY}`,
@@ -51,7 +59,7 @@ export const Gallery = () => {
 
         setImages(sortedImages);
       } catch (error) {
-        console.error("Failed to load images from Airtable", error);
+        console.error("Failed to load gallery images", error);
       }
     };
 
@@ -129,4 +137,3 @@ export const Gallery = () => {
     </>
   );
 };
-

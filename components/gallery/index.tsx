@@ -2,9 +2,7 @@ import { Card, Divider, Text } from "@nextui-org/react";
 import React, { useEffect, useState } from "react";
 import { Flex } from "../styles/flex";
 
-/* =====================
-   Types
-===================== */
+
 type AirtableRecord = {
   id: string;
   fields: {
@@ -19,16 +17,11 @@ type GalleryImage = {
   order: number;
 };
 
-/* =====================
-   Airtable config
-===================== */
 const API_KEY = process.env.NEXT_PUBLIC_AIRTABLE_TOKEN!;
 const BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID!;
 const TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_GALLERY_TABLE!;
 
-/* =====================
-   Component
-===================== */
+
 export const Gallery = () => {
   const [images, setImages] = useState<GalleryImage[]>([]);
 

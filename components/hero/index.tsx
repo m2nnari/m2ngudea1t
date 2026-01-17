@@ -4,9 +4,7 @@ import { Box } from "../styles/box";
 import { Flex } from "../styles/flex";
 import { Typewriter } from "react-simple-typewriter";
 
-/* =====================
-   Types
-===================== */
+
 type AirtableRecord = {
   id: string;
   fields: {
@@ -21,21 +19,17 @@ type HeroImage = {
   order: number;
 };
 
-/* =====================
-   Airtable config
-===================== */
+
 const API_KEY = process.env.NEXT_PUBLIC_AIRTABLE_TOKEN!;
 const BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_HERO_BASE_ID!;
 const TABLE_NAME = process.env.NEXT_PUBLIC_AIRTABLE_HERO_TABLE!;
 
-/* =====================
-   Component
-===================== */
+
 export const Hero = () => {
   const [images, setImages] = useState<HeroImage[]>([]);
   const [currentImage, setCurrentImage] = useState(0);
 
-  /* fetch hero images */
+
   useEffect(() => {
     const fetchHeroImages = async () => {
       try {
@@ -107,7 +101,7 @@ export const Hero = () => {
           },
         }}
       >
-        {/* TEXT */}
+       
         <Box
           css={{
             maxWidth: "550px",
@@ -136,7 +130,7 @@ export const Hero = () => {
           </Text>
         </Box>
 
-        {/* IMAGES */}
+        
         <Box
           css={{
             position: "relative",
@@ -170,7 +164,7 @@ export const Hero = () => {
         </Box>
       </Flex>
 
-      {/* SCROLL INDICATOR – DESKTOP ONLY */}
+      
       <Box
         css={{
           display: "none",

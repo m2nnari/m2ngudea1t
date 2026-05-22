@@ -23,14 +23,14 @@ const Home: NextPage = () => {
         <Image
           src={Logo}
           alt="Mängude Ait"
-          width={150}
-          height={52}
+          width={120}
+          height={42}
           priority
           style={{ objectFit: 'contain' }}
         />
         <p style={{
           color: 'white',
-          fontSize: 'clamp(1.4rem, 3.5vw, 2.2rem)',
+          fontSize: 'clamp(1.7rem, 4vw, 2.8rem)',
           fontFamily: '"Outfit", serif',
           fontWeight: 700,
           margin: 0,
